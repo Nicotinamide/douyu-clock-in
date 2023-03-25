@@ -1,1 +1,17 @@
+name: Daily Clock in
 
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - '02 16 * * *'
+
+jobs:
+  clock_in:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Test'
+        run: echo This is test text.
