@@ -6,6 +6,7 @@ name: Daily Clock in
 on:
   push:
     branches: [ "master" ]
+  workflow_dispatch: 
   schedule: 
     - cron: '02 16 * * *'
 
