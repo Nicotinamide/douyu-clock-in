@@ -6,12 +6,11 @@ on:
       - master
   schedule:
     - '02 16 * * *'
-
 jobs:
   clock_in:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: 'Test'
         run: echo This is test text.
